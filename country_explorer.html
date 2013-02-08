@@ -236,6 +236,7 @@ globalMap = map;
                         MarkACountry(geocoder, "Congo")
 			MarkACountry(geocoder, "Finland")
 			MarkACountry(geocoder, "South Africa")
+			MarkACountry(geocoder, "Indonesia")
 			MarkACountry(geocoder, "Djibouti")
             MarkACountry(geocoder, "Guadeloupe")
             MarkACountry(geocoder, "Honduras")
@@ -250,6 +251,7 @@ globalMap = map;
 			MarkACountry(geocoder, "New Zealand")
 			MarkACountry(geocoder, "Libya")
 			MarkACountry(geocoder, "South Africa")
+			MarkACountry(geocoder, "Indonesia")
 			MarkACountry(geocoder, "Haiti")		}
 		else if (chosen == "Desertification") {
 			clearOverlays();
@@ -441,7 +443,12 @@ globalMap = map;
 		  MarkACountry(geocoder, "Armenia")
 		  
 		}
+		 else if (chosen == "Overfishing") {
+		  clearOverlays();
+		  var geocoder = new google.maps.Geocoder();
+		  MarkACountry(geocoder, "Indonesia")
 		
+                }
 		else if (chosen == "Food Safety") {
 		  clearOverlays();
 		  var geocoder = new google.maps.Geocoder();
@@ -624,6 +631,7 @@ markersArray.push(marker);
         <Input type = radio Name = r1 Value = "War" onClick =GetSelectedItem()>War<BR>
         <Input type = radio Name = r1 Value = "ResourceExploitation" onClick =GetSelectedItem()>Resource Exploitation<BR>
 	<Input type = radio Name = r1 Value = "BiologicalDiversity" onClick =GetSelectedItem()>Biological Diversity<BR>
+	<Input type = radio Name = r1 Value = "Overfishing" onClick =GetSelectedItem()>Deforestation<BR>
 	//Other environmental issues will go here.
 	</center>
 
@@ -640,7 +648,7 @@ essays['Macau'] = $.ajax({url: "Macau.html",async: false}).responseText;
 essays['Belgium'] = $.ajax({url: "Belgium.html",async: false}].responseText;
 essays['Honduras'] = $.ajax({url: "Belgium.html",async: false}].responseText;
 essays['Norway'] = $ajax({url: "norway.html", async: false}).responseText;
-
+essays['Indonesia'] = $.ajax({url: "Indonesia.html", async: false}).responseText;
 <script>
 essays['Norway'] = $ajax({url: "norway.html", async: false}).responseText;
 
