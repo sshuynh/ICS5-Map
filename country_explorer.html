@@ -188,23 +188,6 @@ globalMap = map;
 		}
 
 
-	         else if (chosen == "ClimateChange") {
-		  clearOverlays();
-		  var geocoder = new google.maps.Geocoder();
-		  MarkACountry(geocoder, "United States")
-		  MarkACountry(geocoder, "Canada")
-		  MarkACountry(geocoder, "Spain")
-		  MarkACountry(geocoder, "Pakistan")
-		  MarkACountry(geocoder, "Haiti")
-		  MarkACountry(geocoder, "Finland")
-		  MarkACountry(geocoder, "Norway")
-		  MarkACountry(geocoder, "New Zealand")
-		  MarkACountry(geocoder, "Monaco")
-		  MarkACountry(geocoder, "Djibouti")
-		  MarkACountry(geocoder, "Finland")
-		  MarkACountry(geocoder, "Fiji")
-		  MarkACountry(geocoder, "Israel")
-		  }
 		else if (chosen == "SeaLevelRise") {
 
 			clearOverlays();
@@ -247,20 +230,11 @@ globalMap = map;
 			MarkACountry(geocoder, "Djibouti")
             MarkACountry(geocoder, "Guadeloupe")
 	    de14bf0677a063a995931d534cab88d9681e45a
-            MarkACountry(geocoder, "Honduras")
-			MarkACountry(geocoder, "Taiwan")
-
-			MarkACountry(geocoder, "Ethiopia")
 			MarkACountry(geocoder, "Djibouti")
 			MarkACountry(geocoder, "Laos")
                         MarkACountry(geocoder, "Honduras")
-			MarkACountry(geocoder, "Ethiopia")
-                        MarkACountry(geocoder, "Congo")
-			MarkACountry(geocoder, "Finland")
-			MarkACountry(geocoder, "South Africa")
-
-			MarkACountry(geocoder, "Indonesia")
-			MarkACountry(geocoder, "Haiti")		}
+			MarkACountry(geocoder, "Haiti")
+			}
 
 
 		else if (chosen == "Desertification") {
@@ -272,7 +246,6 @@ globalMap = map;
 
 
             MarkACountry(geocoder, "Honduras")
-	    MarkACountry(geocoder, "Fiji")
 	    MarkACountry(geocoder, "Fiji")
 		}
 		else if (chosen == "Pollution") {
@@ -495,10 +468,9 @@ globalMap = map;
                 }
 		else if (chosen == "Food Safety") {
 
-
-
+		}
 		else if (chosen == "Traffic") {
-4de14bf0677a063a995931d534cab88d9681e45a
+44de14bf0677a063a995931d534cab88d9681e45a
 		  clearOverlays();
 		  var geocoder = new google.maps.Geocoder();
 		  MarkACountry(geocoder, "Israel")
@@ -638,8 +610,6 @@ markersArray.push(marker);
 	<Input type = radio Name = r1 Value = "GreenhouseGasEmissions" onClick =GetSelectedItem()>GreenhouseGasEmissions<BR>
 	<Input type = radio Name = r1 Value = "Transportation" onClick =GetSelectedItem()>Transportation<BR>
 	<Input type = radio Name = r1 Value = "EnergyProduction" onClick =GetSelectedItem()>Energy Production<BR>
-
-
 	<Input type = radio Name = r1 Value = "Biological Diversity" onClick =GetSelectedItem()>Waste Management<BR>
 	<Input type = radio Name = r1 Value = "PublicEducation" onClick =GetSelectedItem()>Public Education<BR>
 	<Input type = radio Name = r1 Value = "SoilDegradation" onClick =GetSelectedItem()>Soil Degradation<BR>
@@ -650,8 +620,7 @@ markersArray.push(marker);
         <Input type = radio Name = r1 Value = "War" onClick =GetSelectedItem()>War<BR>
         <Input type = radio Name = r1 Value = "ResourceExploitation" onClick =GetSelectedItem()>Resource Exploitation<BR>
 	<Input type = radio Name = r1 Value = "BiologicalDiversity" onClick =GetSelectedItem()>Biological Diversity<BR>
-	<Input type = radio Name = r1 Value = "Overfishing" onClick =GetSelectedItem()>Deforestation<BR>
-4de14bf0677a063a995931d534cab88d9681e45a
+	<Input type = radio Name = r1 Value = "Overfishing" onClick =GetSelectedItem()>Overfishing<BR>
 	//Other environmental issues will go here.
 	</center>
 
@@ -669,9 +638,10 @@ essays['Russia'] = $.ajax({url: "Russia.html.html", async: false}).responseText;
 essays['Belgium'] = $.ajax({url: "Belgium.html",async: false}].responseText;
 essays['Honduras'] = $.ajax({url: "Belgium.html",async: false}].responseText;
 essays['Norway'] = $a.jax({url: "norway.html", async: false}).responseText;
+
 essays['Indonesia'] = $.ajax({url: "Indonesia.html", async: false}).responseText;
 <script>
-essays['Norway'] = $a.jax({url: "norway.html", async: false}).responseText;
+essays['Norway'] = $ajax({url: "norway.html", async: false}).responseText;
 
 essays['Haiti'] = $.ajax({url: "haiti.html", async: false}).responseText;
 essays['NewZealand'] = $.ajax({url: "NewZealand.html",async: false}).responseText;
